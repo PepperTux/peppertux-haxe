@@ -1,5 +1,7 @@
 package;
 
+import objects.SolidKill;
+import creatures.snow.IceKrush;
 import flixel.FlxSprite;
 import flixel.addons.editors.tiled.TiledImageLayer;
 import creatures.tropical.Snake;
@@ -54,8 +56,6 @@ class LevelLoader extends FlxState
 
         // MAKE SURE TO PUT THESE THINGS IN YOUR LEVEL OR THE GAME MIGHT CRASH!!!!!!!!!! Sorry for not being very professional but I just needed to make it VERY clear. Do NOT remove the custom properties of the base level for your level.
         var song = tiledMap.properties.get("music");
-        var bg = tiledMap.properties.get("bg");
-        var bgSpeed = tiledMap.properties.get("bgSpeed");
         var levelName = tiledMap.properties.get("levelName");
         var levelCreator = tiledMap.properties.get("levelCreator");
 
@@ -145,6 +145,12 @@ class LevelLoader extends FlxState
         {
             var hurtSquare = new SolidHurt(solid.x, solid.y, solid.width, solid.height); // Need this because width and height.
             state.hurtCollision.add(hurtSquare);
+        }
+
+        for (solid in getLevelObjects(tiledMap, "Kill Collision"))
+        {
+            var killSquare = new SolidKill(solid.x, solid.y, solid.width, solid.height); // Need this because width and height.
+            state.killCollision.add(killSquare);
         }
 
         for (solid in getLevelObjects(tiledMap, "Unisolid"))
@@ -248,6 +254,8 @@ class LevelLoader extends FlxState
                     state.enemies.add(new Iceblock(enemy.x, enemy.y - 30));
                 case "bouncingsnowball":
                     state.enemies.add(new BouncingSnowball(enemy.x, enemy.y - 32));
+                case "icekrush":
+                    state.enemies.add(new IceKrush(enemy.x, enemy.y - 32));
                 case "bomb": // Here so old levels don't break
                     state.enemies.add(new OldBomb(enemy.x, enemy.y - 35));
                 case "oldbomb":

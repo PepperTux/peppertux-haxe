@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="350" height="46" tilewidth="32" tileheight="32" infinite="0" nextlayerid="26" nextobjectid="569">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="350" height="46" tilewidth="32" tileheight="32" infinite="0" nextlayerid="26" nextobjectid="570">
  <properties>
   <property name="levelCreator" value="Your Name"/>
   <property name="levelName" value="Unnamed Level"/>
@@ -43,8 +43,8 @@
   </data>
  </layer>
  <objectgroup id="14" name="Animated Tiles">
-  <object id="385" type="flag" gid="3922" x="1504" y="0" width="32" height="32"/>
-  <object id="568" type="water" gid="3940" x="1376" y="0" width="128" height="32"/>
+  <object id="385" type="flag" gid="3922" x="1536" y="0" width="32" height="32"/>
+  <object id="568" type="water" gid="3940" x="1408" y="0" width="128" height="32"/>
  </objectgroup>
  <layer id="1" name="Main" width="350" height="46">
   <data encoding="base64">
@@ -59,30 +59,31 @@
  <objectgroup id="10" name="Enemies">
   <object id="346" gid="3842" x="0" y="0" width="32" height="32"/>
   <object id="347" type="iceblock" gid="3843" x="64" y="0" width="32" height="32"/>
-  <object id="348" type="jumpy" gid="3844" x="704" y="0" width="32" height="32"/>
+  <object id="348" type="jumpy" gid="3844" x="736" y="0" width="32" height="32"/>
   <object id="352" type="spiky" gid="3848" x="128" y="0" width="32" height="32"/>
   <object id="353" type="bouncingsnowball" gid="3851" x="96" y="0" width="32" height="32"/>
   <object id="354" type="flyingsnowball" gid="3849" x="160" y="0" width="32" height="32"/>
-  <object id="355" type="icicle" gid="3859" x="800" y="0" width="32" height="32"/>
-  <object id="356" type="bomb" gid="3856" x="672" y="0" width="32" height="32"/>
-  <object id="538" type="viciousivy" gid="3880" x="256" y="0" width="32" height="32"/>
-  <object id="539" type="walkingleaf" gid="3881" x="288" y="0" width="32" height="32"/>
-  <object id="540" type="foreststalactite" gid="3854" x="832" y="0" width="32" height="32"/>
-  <object id="541" type="snail" gid="3874" x="320" y="0" width="32" height="32"/>
-  <object id="542" type="crab" gid="3887" x="480" y="0" width="32" height="32"/>
-  <object id="543" type="brab" gid="3889" x="512" y="0" width="32" height="32"/>
-  <object id="544" type="grab" gid="3888" x="544" y="0" width="32" height="32"/>
-  <object id="546" type="snake" gid="3885" x="608" y="0" width="32" height="32"/>
+  <object id="355" type="icicle" gid="3859" x="832" y="0" width="32" height="32"/>
+  <object id="356" type="bomb" gid="3856" x="704" y="0" width="32" height="32"/>
+  <object id="538" type="viciousivy" gid="3880" x="288" y="0" width="32" height="32"/>
+  <object id="539" type="walkingleaf" gid="3881" x="320" y="0" width="32" height="32"/>
+  <object id="540" type="foreststalactite" gid="3854" x="864" y="0" width="32" height="32"/>
+  <object id="541" type="snail" gid="3874" x="352" y="0" width="32" height="32"/>
+  <object id="542" type="crab" gid="3887" x="512" y="0" width="32" height="32"/>
+  <object id="543" type="brab" gid="3889" x="544" y="0" width="32" height="32"/>
+  <object id="544" type="grab" gid="3888" x="576" y="0" width="32" height="32"/>
+  <object id="546" type="snake" gid="3885" x="640" y="0" width="32" height="32"/>
   <object id="549" type="snowjumpy" gid="3875" x="192" y="0" width="32" height="32"/>
-  <object id="551" type="mrbomb" gid="3855" x="768" y="0" width="32" height="32"/>
-  <object id="552" type="coconut" gid="3890" x="864" y="0" width="32" height="32"/>
-  <object id="553" type="cherrybomb" gid="3862" x="576" y="0" width="32" height="32"/>
-  <object id="556" type="kirby" gid="3867" x="384" y="0" width="32" height="32"/>
+  <object id="551" type="mrbomb" gid="3855" x="800" y="0" width="32" height="32"/>
+  <object id="552" type="coconut" gid="3890" x="896" y="0" width="32" height="32"/>
+  <object id="553" type="cherrybomb" gid="3862" x="608" y="0" width="32" height="32"/>
+  <object id="556" type="kirby" gid="3867" x="416" y="0" width="32" height="32"/>
   <object id="560" type="smartball" gid="3850" x="32" y="0" width="32" height="32"/>
-  <object id="567" type="fatbat" gid="3847" x="416" y="0" width="32" height="32"/>
+  <object id="567" type="fatbat" gid="3847" x="448" y="0" width="32" height="32"/>
+  <object id="569" type="icekrush" gid="3866" x="224" y="0" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="8" name="Coins">
-  <object id="391" gid="3897" x="928" y="0" width="32" height="32"/>
+  <object id="391" gid="3897" x="960" y="0" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="6" name="Player">
   <object id="493" gid="3841" x="32" y="384" width="32" height="32"/>
@@ -93,23 +94,23 @@ The reason why there's no slopes is because they're probably really difficult to
   </object>
  </objectgroup>
  <objectgroup id="13" name="Bricks">
-  <object id="379" gid="3908" x="1152" y="0" width="32" height="32"/>
-  <object id="380" type="snow" gid="3909" x="1184" y="0" width="32" height="32"/>
-  <object id="381" type="coin" gid="3913" x="1216" y="0" width="32" height="32"/>
-  <object id="382" type="snowcoin" gid="3914" x="1248" y="0" width="32" height="32"/>
+  <object id="379" gid="3908" x="1184" y="0" width="32" height="32"/>
+  <object id="380" type="snow" gid="3909" x="1216" y="0" width="32" height="32"/>
+  <object id="381" type="coin" gid="3913" x="1248" y="0" width="32" height="32"/>
+  <object id="382" type="snowcoin" gid="3914" x="1280" y="0" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="11" name="Blocks">
-  <object id="372" type="powerup" gid="3907" x="1024" y="0" width="32" height="32"/>
-  <object id="377" type="tuxdoll" gid="3910" x="1056" y="0" width="32" height="32"/>
-  <object id="404" gid="3905" x="992" y="0" width="32" height="32"/>
-  <object id="513" type="star" gid="3906" x="1088" y="0" width="32" height="32"/>
+  <object id="372" type="powerup" gid="3907" x="1056" y="0" width="32" height="32"/>
+  <object id="377" type="tuxdoll" gid="3910" x="1088" y="0" width="32" height="32"/>
+  <object id="404" gid="3905" x="1024" y="0" width="32" height="32"/>
+  <object id="513" type="star" gid="3906" x="1120" y="0" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="24" name="Objects">
-  <object id="558" type="trampoline" gid="3915" x="1312" y="0" width="32" height="32"/>
-  <object id="561" type="wood" gid="3936" x="1568" y="0" width="128" height="32"/>
-  <object id="562" type="icefloe" gid="3937" x="1696" y="0" width="256" height="44"/>
-  <object id="563" type="smallicefloe" gid="3938" x="1952" y="0" width="128" height="44"/>
-  <object id="565" type="tinywood" gid="3939" x="2080" y="0" width="32" height="32"/>
+  <object id="558" type="trampoline" gid="3915" x="1344" y="0" width="32" height="32"/>
+  <object id="561" type="wood" gid="3936" x="1600" y="0" width="128" height="32"/>
+  <object id="562" type="icefloe" gid="3937" x="1728" y="0" width="256" height="44"/>
+  <object id="563" type="smallicefloe" gid="3938" x="1984" y="0" width="128" height="44"/>
+  <object id="565" type="tinywood" gid="3939" x="2112" y="0" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="12" name="Level"/>
  <objectgroup id="19" name="Animated Tiles Foreground"/>

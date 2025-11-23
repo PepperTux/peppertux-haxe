@@ -13,9 +13,9 @@ MILESTONE 1:
 "seeing_sunrise" - Seeing The Sun Rise. It's going to be a sunrise level.
 "vaesea_path" - Vaesea Path. It's just another snow level in the morning.
 "entering_cave" - Entering The Cave. It's a morning level that has a 2nd half that uses the cave tileset, similar to the SuperTux / original version of this level idea.
-"no_snow" - No Snow. It's going to be a level that introduces you to the cave.
+"icy_cavern" - Icy Cavern. It's going to be a level that introduces you to the cave.
 "cave_water" - Cave Of Water. It's going to be a level that features a lot of water in a cave.
-"dark_ice" - Dark Ice. It's going to be another cave level, this time with no water. It's named after the tiles.
+"dark_ice" - Dark Ice. It's going to be another cave level, this time with no water. It's named after the old tiles.
 "arctic_freezer" - Arctic Freezer. It's going to be another cave level, possibly with a secret where you can walk on top of the level to skip a quarter of it.
 "end_cave" - End Of The Cave. It's going to be the last cave level in World 1.
 "sky_snow" - Sky Of Snow. It's going to be another sky level, however, some of the clouds will be solid, which will let you access a secret area.

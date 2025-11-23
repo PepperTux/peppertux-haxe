@@ -31,6 +31,7 @@ class Trampoline extends FlxSprite
         if (isTouching(UP))
         {
             animation.play("bounce");
+            FlxG.sound.play("assets/sounds/trampoline.wav", 1, false);
 
             if (FlxG.keys.anyPressed([SPACE, UP, W]))
             {

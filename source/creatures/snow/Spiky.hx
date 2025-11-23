@@ -32,7 +32,7 @@ class Spiky extends Enemy
     override private function move()
     {
         // Ground Detectors
-        var groundDetectorX = if (direction == 1) { x + this.width + 1; } else { x - 1; }
+        var groundDetectorX = if (direction == 1) { x + this.width + 1; } else { x - 1; } // what is this
         var groundDetectorY = y + this.height + offset.y + 1;
 
         point.setPosition(groundDetectorX, groundDetectorY);
@@ -40,7 +40,7 @@ class Spiky extends Enemy
         // Things
         var hasGround = false;
 
-        // Check for no solid objects
+        // Check for solid objects
         if (FlxG.overlap(point, Global.PS.blocks) || FlxG.overlap(point, Global.PS.bricks) || FlxG.overlap(point, Global.PS.collision) || FlxG.overlap(point, Global.PS.platforms))
         {
             hasGround = true;

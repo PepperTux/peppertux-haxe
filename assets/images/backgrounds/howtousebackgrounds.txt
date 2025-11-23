@@ -1,3 +1,3 @@
-If a background is 736 in height, use a level height of 23.
+If a background is 736 in height, use a level height of 23, unless it doesn't move. Then use a level height of whatever you want.
 If a background repeats vertically, you can use whatever level height you want (although I'm not sure about going below 23)
 If a background is 1472 in height, use a level height of 46 or lower.

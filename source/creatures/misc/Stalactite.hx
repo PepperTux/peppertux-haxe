@@ -46,7 +46,7 @@ class IceStalactite extends Enemy
 
         playerDetection = new FlxSprite(this.x - 40, this.y);
         playerDetection.makeGraphic(Std.int(width) + 80, FlxG.height, FlxColor.TRANSPARENT);
-        playerDetection.alpha = 0.5;
+        playerDetection.alpha = 0.5; // This is here if someone changes the color.
         playerDetection.immovable = true;
         playerDetection.solid = true;
         Global.PS.add(playerDetection);

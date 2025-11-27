@@ -11,6 +11,9 @@ class Fireball extends FlxSprite
 
     public var direction = -1;
 
+    var howManyBounces = 3;
+    var bounces = 0;
+
     var fireballImage = FlxAtlasFrames.fromSparrow("assets/images/objects/firebullet.png", "assets/images/objects/firebullet.xml");
 
     public function new(x:Float, y:Float)
@@ -31,9 +34,15 @@ class Fireball extends FlxSprite
         if (justTouched(FLOOR))
         {
             velocity.y -= jumpHeight;
+            bounces += 1;
         }
 
-        if (justTouched(WALL))
+        if (bounces == howManyBounces)
+        {
+            kill();
+        }
+
+        if (justTouched(WALL) || justTouched(CEILING))
         {
             kill();
         }

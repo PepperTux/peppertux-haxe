@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="castle.png">
+<SubTexture name="idle0000" x="0" y="0" width="36" height="36" frameX="0" frameY="0" frameWidth="32" frameHeight="32" />
+<SubTexture name="crack0000" x="36" y="0" width="36" height="36" frameX="0" frameY="0" frameWidth="32" frameHeight="32" />
+<SubTexture name="crack0001" x="0" y="36" width="36" height="36" frameX="0" frameY="0" frameWidth="32" frameHeight="32" />
+<SubTexture name="crack0002" x="36" y="36" width="36" height="36" frameX="0" frameY="0" frameWidth="32" frameHeight="32" />
+</TextureAtlas>

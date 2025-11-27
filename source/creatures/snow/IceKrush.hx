@@ -45,6 +45,8 @@ class IceKrush extends Enemy
         Global.PS.add(point);
 
         initialX = x;
+
+        damageOthers = true;
     }
 
     override public function update(elapsed:Float)
@@ -57,7 +59,6 @@ class IceKrush extends Enemy
             fall();
         }
 
-        playerDetection.x = x - 40;
         playerDetection.y = y + 32;
     }
 

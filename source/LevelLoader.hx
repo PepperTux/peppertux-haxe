@@ -1,5 +1,6 @@
 package;
 
+import creatures.snow.Crystallo;
 import objects.SolidKill;
 import creatures.snow.IceKrush;
 import flixel.FlxSprite;
@@ -254,6 +255,8 @@ class LevelLoader extends FlxState
                     state.enemies.add(new Iceblock(enemy.x, enemy.y - 30));
                 case "bouncingsnowball":
                     state.enemies.add(new BouncingSnowball(enemy.x, enemy.y - 32));
+                case "crystallo":
+                    state.enemies.add(new Crystallo(enemy.x, enemy.y - 28));
                 case "icekrush":
                     state.enemies.add(new IceKrush(enemy.x, enemy.y - 32));
                 case "bomb": // Here so old levels don't break

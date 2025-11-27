@@ -25,11 +25,11 @@ class FloatingPlatform extends FlxSprite
     {
         super.update(elapsed);
 
-        if (y >= maxY)
+        if (y > maxY)
         {
             velocity.y = -Math.abs(velocityY);
         }
-        else if (y <= minY)
+        else if (y < minY)
         {
             velocity.y = Math.abs(velocityY);
         }

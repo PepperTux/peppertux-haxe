@@ -56,13 +56,14 @@ class EmptyNormalBrickBlock extends FlxSprite
         {
             FlxObject.separateY(this, tux);
             Global.score += scoreAmount;
+            FlxG.sound.play('assets/sounds/brick.wav');
+            
             for (i in 0...4)
             {
                 var debris:FlxParticle = new FlxParticle();
                 debris.loadGraphic('assets/images/particles/brick.png', true, 8, 8);
                 debris.animation.add("rotate", [0, 1], 16, true);
                 debris.animation.play("rotate");
-                FlxG.sound.play('assets/sounds/brick.wav');
 
                 var countX = (i % 2 == 0) ? 1 : -1;
                 var countY = (Math.floor(i / 2)) == 0 ? -1 : 1;
@@ -132,13 +133,14 @@ class EmptySnowBrickBlock extends FlxSprite
         {
             FlxObject.separateY(this, tux);
             Global.score += scoreAmount;
+            FlxG.sound.play('assets/sounds/brick.wav');
+            
             for (i in 0...4)
             {
                 var debris:FlxParticle = new FlxParticle();
                 debris.loadGraphic('assets/images/particles/brick.png', true, 8, 8);
                 debris.animation.add("rotate", [0, 1], 16, true);
                 debris.animation.play("rotate");
-                FlxG.sound.play('assets/sounds/brick.wav');
 
                 var countX = (i % 2 == 0) ? 1 : -1;
                 var countY = (Math.floor(i / 2)) == 0 ? -1 : 1;

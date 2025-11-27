@@ -3,6 +3,7 @@ package creatures;
 // Original file by Vaesea
 // Very simple Jumpy fix by AnatolyStev
 
+import flixel.sound.FlxSound;
 import objects.Fireball;
 import flixel.FlxG;
 import flixel.FlxObject;
@@ -30,16 +31,21 @@ class Enemy extends FlxSprite
     var walkSpeed = 80;
     var jumpHeight = 128;
     var scoreAmount = 50;
-    var bag = false;
-    var tornado = false; // Not sure why I added this?
+    var bag = false; // TODO: Rename to jumpy
+    var tornado = false; // TODO: Remove tornado variable
     public var direction = -1;
     var appeared = false;
+
+    var fallSound:FlxSound;
 
     public function new(x:Float, y:Float)
     {
         super(x, y);
         immovable = false;
         acceleration.y = gravity;
+        
+        fallSound = FlxG.sound.load("assets/sounds/fall.wav", 1, false);
+        fallSound.proximity(x, y, FlxG.camera.target, FlxG.width * 0.6);
     }
 
     override public function update(elapsed: Float)
@@ -137,7 +143,8 @@ class Enemy extends FlxSprite
         }
         else
         {
-            FlxG.sound.play("assets/sounds/fall.wav");
+            fallSound.setPosition(x + width / 2, y + height);
+            fallSound.play();
             flipY = true;
             acceleration.x = 0;
             velocity.x = fallForce;

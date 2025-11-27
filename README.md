@@ -32,6 +32,7 @@ There's credits for stuff that isn't added because they will be added soon.
 ### Everyone Else
 * Bart + opengameart.org - Airship Song
 * Remaxim + opengameart.org - Orchestral Remix of Airship Song
+* Edise - Coconut falling sound (https://freesound.org/people/Edise/sounds/566360/)
 * ZhayTee - Music from Pingus
 * Lukas Nystrand (Mortimer Twang) - Mortimer's Chipdisko
 * Mystical - Salcon

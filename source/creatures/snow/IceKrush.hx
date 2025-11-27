@@ -1,5 +1,6 @@
 package creatures.snow;
 
+import flixel.util.FlxTimer;
 import objects.Fireball;
 import flixel.FlxObject;
 import flixel.FlxG;
@@ -10,6 +11,7 @@ enum IceKrushStates
 {
     Normal;
     Crushing;
+    Crushed;
     Recovering;
 }
 
@@ -70,7 +72,7 @@ class IceKrush extends Enemy
 
         var hasCeiling = false;
 
-        // Check for solid objects
+        // Check for solid objects. All of them.
         if (FlxG.overlap(point, Global.PS.blocks) || FlxG.overlap(point, Global.PS.bricks) || FlxG.overlap(point, Global.PS.collision) || FlxG.overlap(point, Global.PS.platforms))
         {
             hasCeiling = true;
@@ -96,9 +98,16 @@ class IceKrush extends Enemy
             currentIcecrusherState = Normal;
         }
 
-        if (justTouched(FLOOR))
+        if (justTouched(FLOOR) && currentIcecrusherState == Crushing)
         {
-            currentIcecrusherState = Recovering;
+            Global.PS.camera.shake(0.01, 0.1);
+            
+            currentIcecrusherState = Crushed;
+
+            new FlxTimer().start(0.5, function(_)
+            {
+                currentIcecrusherState = Recovering;
+            });
         }
     }
 

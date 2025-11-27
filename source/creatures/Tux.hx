@@ -51,9 +51,9 @@ class Tux extends FlxSprite
     var canTakeDamage = true;
 
     // Speed
-    var walkSpeed = 230;
+    var walkSpeed = 320;
     var speed = 0; // DON'T CHANGE THIS UNLESS YOU KNOW WHAT YOU'RE DOING. You should only change walkSpeed and runSpeed.
-    var runSpeed = 320;
+    var runSpeed = 320; // TODO: Remove this
     var tuxAcceleration = 2000;
     var deceleration = 1600;
 

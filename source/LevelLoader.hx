@@ -206,16 +206,12 @@ class LevelLoader extends FlxState
         {
             switch (object.type)
             {
-                // Deprecated
                 default:
-                    state.atiles.add(new Water(object.x, object.y - 32));
-                // Deprecated
-                case "trans":
-                    state.atiles.add(new WaterTrans(object.x, object.y - 32));
+                    state.atiles.add(new WaterNew(object.x, object.y - 32));
                 case "flag":
                     state.atiles.add(new Flag(object.x, object.y - 32));
-                case "water":
-                    state.atiles.add(new WaterNew(object.x, object.y - 32));
+                case "lava":
+                    state.atiles.add(new Lava(object.x, object.y - 32));
             }
         }
 
@@ -340,16 +336,12 @@ class LevelLoader extends FlxState
         {
             switch (object.type)
             {
-                // Deprecated
                 default:
-                    state.atilesFront.add(new Water(object.x, object.y - 32));
-                // Deprecated
-                case "trans":
-                    state.atilesFront.add(new WaterTrans(object.x, object.y - 32));
+                    state.atiles.add(new WaterNew(object.x, object.y - 32));
                 case "flag":
-                    state.atilesFront.add(new Flag(object.x, object.y - 32));
-                case "water":
-                    state.atilesFront.add(new WaterNew(object.x, object.y - 32));
+                    state.atiles.add(new Flag(object.x, object.y - 32));
+                case "lava":
+                    state.atiles.add(new Lava(object.x, object.y - 32));
             }
         }
 

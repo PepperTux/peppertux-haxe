@@ -39,7 +39,7 @@ class Iceblock extends Enemy
     {
         if (currentIceblockState == MovingSquished)
         {
-            velocity.x = direction * walkSpeed * 5;
+            velocity.x = direction * walkSpeed * 6;
         }
         else if (currentIceblockState == Squished || currentIceblockState == Held)
         {

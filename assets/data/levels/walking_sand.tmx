@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="350" height="46" tilewidth="32" tileheight="32" infinite="0" nextlayerid="26" nextobjectid="584">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="350" height="46" tilewidth="32" tileheight="32" infinite="0" nextlayerid="26" nextobjectid="674">
  <properties>
   <property name="levelCreator" value="Sophie Ball"/>
   <property name="levelName" value="Walking On Sand"/>
@@ -88,29 +88,77 @@
   <object id="577" type="crab" gid="4047" x="1280" y="1312" width="32" height="32"/>
   <object id="579" type="coconut" gid="4050" x="1104.67" y="1021.67" width="32" height="32"/>
   <object id="580" type="coconut" gid="4050" x="3084.67" y="1088.34" width="32" height="32"/>
+  <object id="587" type="grab" gid="4048" x="1888" y="1280" width="32" height="32"/>
+  <object id="590" type="brab" gid="4049" x="1696" y="1120" width="32" height="32"/>
+  <object id="591" type="brab" gid="4049" x="2720" y="1280" width="32" height="32"/>
+  <object id="592" type="crab" gid="4047" x="3264" y="1376" width="32" height="32"/>
+  <object id="596" type="brab" gid="4049" x="3680" y="1088" width="32" height="32"/>
+  <object id="599" type="grab" gid="4048" x="5056" y="1120" width="32" height="32"/>
+  <object id="601" type="grab" gid="4048" x="4960" y="1120" width="32" height="32"/>
+  <object id="602" type="crab" gid="4047" x="4576" y="1152" width="32" height="32"/>
+  <object id="604" type="crab" gid="4047" x="4640" y="1120" width="32" height="32"/>
+  <object id="605" type="crab" gid="4047" x="5952" y="1344" width="32" height="32"/>
+  <object id="606" type="brab" gid="4049" x="5888" y="1216" width="32" height="32"/>
+  <object id="608" type="grab" gid="4048" x="6752" y="1248" width="32" height="32"/>
+  <object id="609" type="crab" gid="4047" x="7520" y="1280" width="32" height="32"/>
+  <object id="610" type="crab" gid="4047" x="8480" y="1344" width="32" height="32"/>
+  <object id="611" type="grab" gid="4048" x="8832" y="1280" width="32" height="32"/>
+  <object id="615" type="grab" gid="4048" x="9376" y="1216" width="32" height="32"/>
+  <object id="616" type="brab" gid="4049" x="9952" y="1216" width="32" height="32"/>
+  <object id="617" type="grab" gid="4048" x="9952" y="1280" width="32" height="32"/>
+  <object id="619" type="grab" gid="4048" x="10272" y="1280" width="32" height="32"/>
+  <object id="621" type="crab" gid="4047" x="10112" y="1280" width="32" height="32"/>
+  <object id="622" type="cherrybomb" gid="4022" x="1760" y="1280" width="32" height="32"/>
+  <object id="623" type="cherrybomb" gid="4022" x="3744" y="1088" width="32" height="32"/>
+  <object id="624" type="cherrybomb" gid="4022" x="5152" y="1120" width="32" height="32"/>
+  <object id="625" type="cherrybomb" gid="4022" x="9472" y="1216" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="8" name="Coins">
   <object id="391" gid="4064" x="1056" y="0" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="6" name="Player">
   <object id="493" gid="4001" x="32" y="1312" width="32" height="32"/>
-  <object id="517" x="-928" y="-32" width="896" height="896">
-   <text fontfamily="Segoe UI" pixelsize="37" wrap="1" color="#ff0000">(Remove this text before playing!) To place objects, copy them from the top left to your level, or change the class name of the object you just placed from the tileset. Most backgrounds require the level height to be set to 23. Draw squares in solid using the square tool to add collision.
-
-The reason why there's no slopes is because they're probably really difficult to add, and HaxeFlixel doesn't have good slope physics, as you can see in their platformer-like demo that contains slopes and unisolid tiles (FlxTilemapExt). To see which enemies don't work, check if they're in the source code. If they're not, they don't work and will be Snowball in-game.</text>
-  </object>
  </objectgroup>
  <objectgroup id="13" name="Bricks">
   <object id="379" gid="4075" x="1280" y="0" width="32" height="32"/>
   <object id="380" type="snow" gid="4076" x="1312" y="0" width="32" height="32"/>
   <object id="381" type="coin" gid="4080" x="1344" y="0" width="32" height="32"/>
   <object id="382" type="snowcoin" gid="4081" x="1376" y="0" width="32" height="32"/>
+  <object id="656" type="coin" gid="4080" x="4896" y="1024" width="32" height="32"/>
+  <object id="660" gid="4075" x="4832" y="1024" width="32" height="32"/>
+  <object id="661" gid="4075" x="4928" y="1024" width="32" height="32"/>
+  <object id="662" gid="4075" x="4992" y="1024" width="32" height="32"/>
+  <object id="663" gid="4075" x="416" y="1248" width="32" height="32"/>
+  <object id="664" gid="4075" x="352" y="1248" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="11" name="Blocks">
   <object id="372" type="powerup" gid="4074" x="1152" y="0" width="32" height="32"/>
   <object id="377" type="tuxdoll" gid="4077" x="1184" y="0" width="32" height="32"/>
   <object id="404" gid="4072" x="1120" y="0" width="32" height="32"/>
   <object id="513" type="star" gid="4073" x="1216" y="0" width="32" height="32"/>
+  <object id="626" gid="4072" x="320" y="1248" width="32" height="32"/>
+  <object id="628" gid="4072" x="384" y="1248" width="32" height="32"/>
+  <object id="630" gid="4072" x="448" y="1248" width="32" height="32"/>
+  <object id="633" gid="4072" x="704" y="1216" width="32" height="32"/>
+  <object id="634" gid="4072" x="672" y="1216" width="32" height="32"/>
+  <object id="635" type="powerup" gid="4074" x="1632" y="1024" width="32" height="32"/>
+  <object id="636" gid="4072" x="1600" y="1024" width="32" height="32"/>
+  <object id="637" gid="4072" x="1664" y="1024" width="32" height="32"/>
+  <object id="638" type="powerup" gid="4074" x="5792" y="1120" width="32" height="32"/>
+  <object id="639" gid="4072" x="3136" y="1280" width="32" height="32"/>
+  <object id="642" gid="4072" x="3168" y="1280" width="32" height="32"/>
+  <object id="644" gid="4072" x="4960" y="1024" width="32" height="32"/>
+  <object id="645" gid="4072" x="4864" y="1024" width="32" height="32"/>
+  <object id="650" gid="4072" x="5024" y="1024" width="32" height="32"/>
+  <object id="651" gid="4072" x="4800" y="1024" width="32" height="32"/>
+  <object id="665" gid="4072" x="5760" y="1120" width="32" height="32"/>
+  <object id="666" gid="4072" x="5824" y="1120" width="32" height="32"/>
+  <object id="667" gid="4072" x="6656" y="1152" width="32" height="32"/>
+  <object id="669" gid="4072" x="6624" y="1152" width="32" height="32"/>
+  <object id="670" gid="4072" x="6688" y="1152" width="32" height="32"/>
+  <object id="671" gid="4072" x="9888" y="1120" width="32" height="32"/>
+  <object id="672" gid="4072" x="9920" y="1120" width="32" height="32"/>
+  <object id="673" gid="4072" x="9856" y="1120" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="24" name="Objects">
   <object id="558" type="trampoline" gid="4082" x="1440" y="0" width="32" height="32"/>

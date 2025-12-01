@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="350" height="46" tilewidth="32" tileheight="32" infinite="0" nextlayerid="26" nextobjectid="674">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="350" height="46" tilewidth="32" tileheight="32" infinite="0" nextlayerid="26" nextobjectid="721">
  <properties>
   <property name="levelCreator" value="Sophie Ball"/>
   <property name="levelName" value="Walking On Sand"/>
@@ -43,7 +43,6 @@
   </data>
  </layer>
  <objectgroup id="14" name="Animated Tiles">
-  <object id="385" type="flag" gid="4089" x="1632" y="0" width="32" height="32"/>
   <object id="568" type="water" gid="4107" x="768" y="1376" width="128" height="32"/>
   <object id="578" type="water" gid="4107" x="896" y="1376" width="128" height="32"/>
  </objectgroup>
@@ -58,33 +57,6 @@
   </data>
  </layer>
  <objectgroup id="10" name="Enemies">
-  <object id="346" gid="4002" x="0" y="0" width="32" height="32"/>
-  <object id="347" type="iceblock" gid="4003" x="64" y="0" width="32" height="32"/>
-  <object id="348" type="jumpy" gid="4004" x="800" y="0" width="32" height="32"/>
-  <object id="352" type="spiky" gid="4008" x="128" y="0" width="32" height="32"/>
-  <object id="353" type="bouncingsnowball" gid="4011" x="96" y="0" width="32" height="32"/>
-  <object id="354" type="flyingsnowball" gid="4009" x="160" y="0" width="32" height="32"/>
-  <object id="355" type="icicle" gid="4019" x="896" y="0" width="32" height="32"/>
-  <object id="356" type="bomb" gid="4016" x="768" y="0" width="32" height="32"/>
-  <object id="538" type="viciousivy" gid="4040" x="352" y="0" width="32" height="32"/>
-  <object id="539" type="walkingleaf" gid="4041" x="384" y="0" width="32" height="32"/>
-  <object id="540" type="foreststalactite" gid="4014" x="928" y="0" width="32" height="32"/>
-  <object id="541" type="snail" gid="4034" x="416" y="0" width="32" height="32"/>
-  <object id="542" type="crab" gid="4047" x="576" y="0" width="32" height="32"/>
-  <object id="543" type="brab" gid="4049" x="608" y="0" width="32" height="32"/>
-  <object id="544" type="grab" gid="4048" x="640" y="0" width="32" height="32"/>
-  <object id="546" type="snake" gid="4045" x="704" y="0" width="32" height="32"/>
-  <object id="549" type="snowjumpy" gid="4035" x="192" y="0" width="32" height="32"/>
-  <object id="551" type="mrbomb" gid="4015" x="864" y="0" width="32" height="32"/>
-  <object id="552" type="coconut" gid="4050" x="960" y="0" width="32" height="32"/>
-  <object id="553" type="cherrybomb" gid="4022" x="672" y="0" width="32" height="32"/>
-  <object id="556" type="kirby" gid="4027" x="480" y="0" width="32" height="32"/>
-  <object id="560" type="smartball" gid="4010" x="32" y="0" width="32" height="32"/>
-  <object id="567" type="fatbat" gid="4007" x="512" y="0" width="32" height="32"/>
-  <object id="569" type="icekrush" gid="4026" x="256" y="0" width="32" height="32"/>
-  <object id="571" type="crystallo" gid="4023" x="224" y="0" width="32" height="32"/>
-  <object id="573" type="flame" gid="4005" x="992" y="0" width="32" height="32"/>
-  <object id="575" type="iceflame" gid="4013" x="288" y="0" width="32" height="32"/>
   <object id="577" type="crab" gid="4047" x="1280" y="1312" width="32" height="32"/>
   <object id="579" type="coconut" gid="4050" x="1104.67" y="1021.67" width="32" height="32"/>
   <object id="580" type="coconut" gid="4050" x="3084.67" y="1088.34" width="32" height="32"/>
@@ -114,16 +86,47 @@
   <object id="625" type="cherrybomb" gid="4022" x="9472" y="1216" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="8" name="Coins">
-  <object id="391" gid="4064" x="1056" y="0" width="32" height="32"/>
+  <object id="674" gid="4064" x="416" y="1344" width="32" height="32"/>
+  <object id="677" gid="4064" x="384" y="1344" width="32" height="32"/>
+  <object id="678" gid="4064" x="352" y="1344" width="32" height="32"/>
+  <object id="679" gid="4064" x="1600" y="1184" width="32" height="32"/>
+  <object id="680" gid="4064" x="1632" y="1184" width="32" height="32"/>
+  <object id="681" gid="4064" x="1664" y="1184" width="32" height="32"/>
+  <object id="682" gid="4064" x="3456" y="992" width="32" height="32"/>
+  <object id="685" gid="4064" x="3488" y="960" width="32" height="32"/>
+  <object id="686" gid="4064" x="3520" y="960" width="32" height="32"/>
+  <object id="689" gid="4064" x="3552" y="928" width="32" height="32"/>
+  <object id="690" gid="4064" x="3616" y="928" width="32" height="32"/>
+  <object id="691" gid="4064" x="3648" y="960" width="32" height="32"/>
+  <object id="692" gid="4064" x="3680" y="960" width="32" height="32"/>
+  <object id="693" gid="4064" x="3712" y="992" width="32" height="32"/>
+  <object id="694" gid="4064" x="3584" y="928" width="32" height="32"/>
+  <object id="695" gid="4064" x="4832" y="896" width="32" height="32"/>
+  <object id="696" gid="4064" x="4864" y="864" width="32" height="32"/>
+  <object id="697" gid="4064" x="4896" y="832" width="32" height="32"/>
+  <object id="698" gid="4064" x="4928" y="832" width="32" height="32"/>
+  <object id="699" gid="4064" x="4960" y="864" width="32" height="32"/>
+  <object id="701" gid="4064" x="4992" y="896" width="32" height="32"/>
+  <object id="702" gid="4064" x="6816" y="1152" width="32" height="32"/>
+  <object id="703" gid="4064" x="6848" y="1120" width="32" height="32"/>
+  <object id="706" gid="4064" x="6880" y="1120" width="32" height="32"/>
+  <object id="707" gid="4064" x="6912" y="1120" width="32" height="32"/>
+  <object id="708" gid="4064" x="6944" y="1152" width="32" height="32"/>
+  <object id="709" gid="4064" x="7968" y="1248" width="32" height="32"/>
+  <object id="710" gid="4064" x="8000" y="1216" width="32" height="32"/>
+  <object id="711" gid="4064" x="8032" y="1216" width="32" height="32"/>
+  <object id="712" gid="4064" x="8064" y="1216" width="32" height="32"/>
+  <object id="713" gid="4064" x="8096" y="1248" width="32" height="32"/>
+  <object id="715" gid="4064" x="10560" y="1152" width="32" height="32"/>
+  <object id="716" gid="4064" x="10592" y="1120" width="32" height="32"/>
+  <object id="718" gid="4064" x="10624" y="1088" width="32" height="32"/>
+  <object id="719" gid="4064" x="10656" y="1088" width="32" height="32"/>
+  <object id="720" gid="4064" x="10688" y="1088" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="6" name="Player">
   <object id="493" gid="4001" x="32" y="1312" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="13" name="Bricks">
-  <object id="379" gid="4075" x="1280" y="0" width="32" height="32"/>
-  <object id="380" type="snow" gid="4076" x="1312" y="0" width="32" height="32"/>
-  <object id="381" type="coin" gid="4080" x="1344" y="0" width="32" height="32"/>
-  <object id="382" type="snowcoin" gid="4081" x="1376" y="0" width="32" height="32"/>
   <object id="656" type="coin" gid="4080" x="4896" y="1024" width="32" height="32"/>
   <object id="660" gid="4075" x="4832" y="1024" width="32" height="32"/>
   <object id="661" gid="4075" x="4928" y="1024" width="32" height="32"/>
@@ -132,10 +135,6 @@
   <object id="664" gid="4075" x="352" y="1248" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="11" name="Blocks">
-  <object id="372" type="powerup" gid="4074" x="1152" y="0" width="32" height="32"/>
-  <object id="377" type="tuxdoll" gid="4077" x="1184" y="0" width="32" height="32"/>
-  <object id="404" gid="4072" x="1120" y="0" width="32" height="32"/>
-  <object id="513" type="star" gid="4073" x="1216" y="0" width="32" height="32"/>
   <object id="626" gid="4072" x="320" y="1248" width="32" height="32"/>
   <object id="628" gid="4072" x="384" y="1248" width="32" height="32"/>
   <object id="630" gid="4072" x="448" y="1248" width="32" height="32"/>
@@ -161,11 +160,6 @@
   <object id="673" gid="4072" x="9856" y="1120" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="24" name="Objects">
-  <object id="558" type="trampoline" gid="4082" x="1440" y="0" width="32" height="32"/>
-  <object id="561" type="wood" gid="4103" x="1664" y="0" width="128" height="32"/>
-  <object id="562" type="icefloe" gid="4104" x="1792" y="0" width="256" height="44"/>
-  <object id="563" type="smallicefloe" gid="4105" x="2048" y="0" width="128" height="44"/>
-  <object id="565" type="tinywood" gid="4106" x="2176" y="0" width="32" height="32"/>
   <object id="582" type="trampoline" gid="4082" x="3328" y="1376" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="12" name="Level"/>

@@ -409,3 +409,133 @@ class Coconut extends Enemy
         return;
     }
 }
+
+class MountainStalactite extends Enemy
+{
+    // Shaking
+    var shakeDuration = 0.5;
+    var shakeIntensity = 0.1;
+    var isShaking = false;
+
+    // Falling
+    var isBroken = false; // TODO: Replace with a state at some point?
+
+    // Image
+    var mountainStalactiteImage = FlxAtlasFrames.fromSparrow("assets/images/characters/mountainstalactite.png", "assets/images/characters/mountainstalactite.xml");
+
+    var playerDetection:FlxSprite;
+
+    public function new(x:Float, y:Float)
+    {
+        super(x, y);
+
+        acceleration.y = 0;
+        
+        // Image
+        frames = mountainStalactiteImage;
+        animation.addByPrefix("normal", "normal", 12, false);
+        animation.addByPrefix("broken", "broken", 12, false);
+        animation.play("normal");
+
+        // Hitbox
+        setSize(34, 56);
+        offset.set(13, 0);
+
+        immovable = true;
+
+        playerDetection = new FlxSprite(this.x - 40, this.y);
+        playerDetection.makeGraphic(Std.int(width) + 80, FlxG.height, FlxColor.TRANSPARENT);
+        playerDetection.alpha = 0.5;
+        playerDetection.immovable = true;
+        playerDetection.solid = true;
+        Global.PS.add(playerDetection);
+    }
+
+    override public function update(elapsed:Float)
+    {
+        super.update(elapsed);
+
+        if (playerDetection.overlaps(Global.PS.tux) && !isShaking) // You don't really need to put "true" or "false" sometimes.
+        {
+            isShaking = true;
+            immovable = false;
+            damageOthers = true;
+            FlxG.sound.play("assets/sounds/cracking.wav");
+            FlxTween.shake(this, shakeIntensity, shakeDuration, X, {onComplete: fall});
+        }
+
+        playerDetection.x = x - 40;
+        playerDetection.y = y;
+    }
+
+    public function fall(_)
+    {
+        acceleration.y = gravity;
+    }
+
+    override public function interact(tux:Tux)
+    {
+        if (!tux.invincible || !isBroken)
+        {
+            tux.takeDamage();
+        }
+
+        if (tux.invincible || isBroken) // Works fine without isBroken here, but just trying to make sure it works...
+        {
+            return;
+        }
+    }
+
+    override private function move()
+    {
+        if (isBroken) // Here because super.update(elapsed); makes it so the code for hitting the floor has to be here.
+        {
+            animation.play("broken");
+            setSize(27, 34);
+            offset.set(2, 5);
+            acceleration.y = 0;
+            velocity.y = 0;
+            solid = false;
+            damageOthers = false;
+            new FlxTimer().start(2.0, function(_)
+            {
+                kill();
+            }, 1);
+        }
+
+        if (justTouched(FLOOR)) // Same comment as the one on line 104.
+        {
+            isBroken = true;
+            FlxG.sound.play("assets/sounds/icecrash.ogg", 1, false);
+        }
+    }
+
+    override public function kill()
+    {
+        exists = false;
+        alive = false;
+    }
+
+    override private function checkIfHerring(tux:Tux)
+    {
+        return;
+    }
+
+    override public function killFall()
+    {
+        return;
+    }
+
+    override public function collideOtherEnemy(otherEnemy:Enemy)
+    {
+        if (damageOthers == true)
+        {
+            otherEnemy.killFall();
+        }
+    }
+
+    override public function collideFireball(fireball:Fireball)
+    {
+        return;
+    }
+}

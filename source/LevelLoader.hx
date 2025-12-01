@@ -310,6 +310,8 @@ class LevelLoader extends FlxState
                     state.enemies.add(new IceStalactite(enemy.x, enemy.y - 32));
                 case "foreststalactite":
                     state.enemies.add(new ForestStalactite(enemy.x, enemy.y - 36));
+                case "mountainstalactite":
+                    state.enemies.add(new MountainStalactite(enemy.x, enemy.y - 39));
                 case "coconut":
                     state.enemies.add(new Coconut(enemy.x, enemy.y - 32));
                 case "viciousivy":

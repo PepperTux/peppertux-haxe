@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mountainstalactite.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="normal0000" x="0" y="0" width="66" height="67" frameX="1" frameY="2" frameWidth="64" frameHeight="64"/>
+	<SubTexture name="broken0000" x="66" y="0" width="66" height="49" frameX="0" frameY="-17" frameWidth="64" frameHeight="64"/>
+</TextureAtlas>

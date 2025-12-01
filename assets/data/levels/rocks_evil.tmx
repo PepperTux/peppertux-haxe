@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="350" height="68" tilewidth="32" tileheight="32" infinite="0" nextlayerid="28" nextobjectid="620">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="350" height="68" tilewidth="32" tileheight="32" infinite="0" nextlayerid="28" nextobjectid="661">
  <properties>
   <property name="levelCreator" value="Sophie Ball"/>
   <property name="levelName" value="Rocks Of Evil"/>
@@ -97,12 +97,42 @@
   <object id="589" type="mountainstalactite" gid="4059" x="6816" y="1248" width="32" height="32"/>
   <object id="592" type="bomb" gid="4016" x="960" y="1856" width="32" height="32"/>
   <object id="593" type="bomb" gid="4016" x="1216" y="1728" width="32" height="32"/>
+  <object id="622" type="jumpy" gid="4004" x="1552" y="1728" width="32" height="32"/>
+  <object id="623" type="jumpy" gid="4004" x="1936" y="1792" width="32" height="32"/>
+  <object id="624" type="jumpy" gid="4004" x="2320" y="1856" width="32" height="32"/>
+  <object id="625" type="bomb" gid="4016" x="3328" y="1920" width="32" height="32"/>
+  <object id="629" type="bomb" gid="4016" x="3136" y="1920" width="32" height="32"/>
+  <object id="630" type="spiky" gid="4008" x="3232" y="1920" width="32" height="32"/>
+  <object id="631" type="spiky" gid="4008" x="3040" y="1920" width="32" height="32"/>
+  <object id="633" type="spiky" gid="4008" x="3872" y="1856" width="32" height="32"/>
+  <object id="634" type="spiky" gid="4008" x="4384" y="1792" width="32" height="32"/>
+  <object id="635" type="spiky" gid="4008" x="4896" y="1856" width="32" height="32"/>
+  <object id="637" type="spiky" gid="4008" x="5408" y="1792" width="32" height="32"/>
+  <object id="638" type="spiky" gid="4008" x="5344" y="1792" width="32" height="32"/>
+  <object id="639" type="spiky" gid="4008" x="4320" y="1792" width="32" height="32"/>
+  <object id="641" type="bomb" gid="4016" x="6176" y="1728" width="32" height="32"/>
+  <object id="642" type="bomb" gid="4016" x="6048" y="1728" width="32" height="32"/>
+  <object id="645" type="bomb" gid="4016" x="5920" y="1728" width="32" height="32"/>
+  <object id="647" type="jumpy" gid="4004" x="5696" y="1728" width="32" height="32"/>
+  <object id="648" type="jumpy" gid="4004" x="6272" y="1600" width="32" height="32"/>
+  <object id="649" type="jumpy" gid="4004" x="6720" y="1472" width="32" height="32"/>
+  <object id="650" type="jumpy" gid="4004" x="6880" y="1472" width="32" height="32"/>
+  <object id="651" type="spiky" gid="4008" x="7392" y="1344" width="32" height="32"/>
+  <object id="652" type="spiky" gid="4008" x="7328" y="1344" width="32" height="32"/>
+  <object id="653" type="spiky" gid="4008" x="7904" y="1280" width="32" height="32"/>
+  <object id="654" type="spiky" gid="4008" x="7840" y="1280" width="32" height="32"/>
+  <object id="655" type="spiky" gid="4008" x="8480" y="1088" width="32" height="32"/>
+  <object id="656" type="spiky" gid="4008" x="8288" y="1216" width="32" height="32"/>
+  <object id="657" type="jumpy" gid="4004" x="8704" y="960" width="32" height="32"/>
+  <object id="658" type="jumpy" gid="4004" x="8928" y="960" width="32" height="32"/>
+  <object id="659" type="jumpy" gid="4004" x="9280" y="1088" width="32" height="32"/>
+  <object id="660" type="jumpy" gid="4004" x="9504" y="1088" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="8" name="Coins">
   <object id="391" gid="4064" x="1120" y="0" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="6" name="Player">
-  <object id="493" gid="4001" x="32" y="1088" width="32" height="32"/>
+  <object id="493" gid="4001" x="32" y="1952" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="13" name="Bricks">
   <object id="379" gid="4075" x="1344" y="0" width="32" height="32"/>

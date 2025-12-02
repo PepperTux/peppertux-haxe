@@ -10,6 +10,7 @@ package creatures;
 
 // I added lots of comments just in case someone wanted to do make a mod of this recreation but doesn't know how to code.
 
+import haxe.display.JsonModuleTypes.JsonModuleType;
 import creatures.forest.Snail;
 import creatures.snow.Iceblock;
 import flixel.FlxG;
@@ -29,8 +30,9 @@ enum TuxStates
 class Tux extends FlxSprite
 {
     // (Added by AnatolyStev) Holding Iceblock Stuff
-    public var heldIceblock:Iceblock = null;
-    public var heldSnail:Snail = null;
+    // public var heldIceblock:Iceblock = null;
+    // public var heldSnail:Snail = null;
+    public var heldEnemy:Enemy = null;
 
     // (Added by AnatolyStev) Ducking stuff
     var isDucking = false;
@@ -38,7 +40,7 @@ class Tux extends FlxSprite
     // Current State
     public var currentState = Small;
 
-    // Coffee Ball Stuff
+    // Fireball Stuff
     var canShoot = true;
     var shootCooldown = 0.3;
 
@@ -53,8 +55,7 @@ class Tux extends FlxSprite
 
     // Speed
     var walkSpeed = 320;
-    var speed = 0; // DON'T CHANGE THIS UNLESS YOU KNOW WHAT YOU'RE DOING. You should only change walkSpeed and runSpeed.
-    var runSpeed = 320; // TODO: Remove this
+    var speed = 0; // DON'T CHANGE THIS UNLESS YOU KNOW WHAT YOU'RE DOING. You should only change walkSpeed.
     var tuxAcceleration = 2000;
     var deceleration = 1600;
 
@@ -215,16 +216,7 @@ class Tux extends FlxSprite
 
         if (!inCutscene)
         {
-            // Stuff to move Tux
-            if (FlxG.keys.pressed.CONTROL) // Running
-            {
-                speed = runSpeed;
-            }
-            else 
-            {
-                speed = walkSpeed;
-            }
-
+            speed = walkSpeed;
             // Ducking stuff
             if ((currentState == Big || currentState == Fire))
             {
@@ -348,73 +340,40 @@ class Tux extends FlxSprite
 
         shootBall();
 
-        if (heldIceblock != null)
+        if (heldEnemy != null)
         {
             if (FlxG.keys.justReleased.CONTROL)
             {
-                throwIceblock();
-            }
-        }
-
-        if (heldSnail != null)
-        {
-            if (FlxG.keys.justReleased.CONTROL)
-            {
-                throwSnail();
+                throwEnemy();
             }
         }
 
 		super.update(elapsed); // Put this after the movement code, should probably also be after everything else in update.
 	}
 
-    public function holdIceblock(iceblock:Iceblock)
+    public function holdIceblock(enemy:Enemy)
     {
-        if (heldIceblock != null || heldSnail != null)
+        if (heldEnemy != null)
         {
             return;
         }
 
         if (FlxG.keys.pressed.CONTROL)
         {
-            heldIceblock = iceblock;
-            iceblock.pickUp(this);
+            heldEnemy = enemy;
+            enemy.pickUp(this);
         }
     }
 
-    public function holdSnail(snail:Snail)
+    public function throwEnemy()
     {
-        if (heldIceblock != null || heldSnail != null)
+        if (heldEnemy == null)
         {
             return;
         }
 
-        if (FlxG.keys.pressed.CONTROL)
-        {
-            heldSnail = snail;
-            snail.pickUp(this);
-        }
-    }
-
-    public function throwIceblock()
-    {
-        if (heldIceblock == null)
-        {
-            return;
-        }
-
-        heldIceblock.iceblockThrow();
-        heldIceblock = null;
-    }
-
-    public function throwSnail()
-    {
-        if (heldSnail == null)
-        {
-            return;
-        }
-
-        heldSnail.snailThrow();
-        heldSnail = null;
+        heldEnemy.iceblockThrow();
+        heldEnemy = null;
     }
 
     public function takeDamage() //  Makes Tux take damage.
@@ -583,28 +542,28 @@ class Tux extends FlxSprite
 
     public function walkRight()
     {
-        maxVelocity.x = walkSpeed;
+        maxVelocity.x = 230;
         drag.x = 0;
         acceleration.x = 230;
     }
 
     public function walkLeft()
     {
-        maxVelocity.x = walkSpeed;
+        maxVelocity.x = 230;
         drag.x = deceleration;
         acceleration.x = -230;
     }
 
     public function runRight()
     {
-        maxVelocity.x = runSpeed;
+        maxVelocity.x = walkSpeed;
         drag.x = deceleration;
         acceleration.x = 320;
     }
 
     public function runLeft()
     {
-        maxVelocity.x = runSpeed;
+        maxVelocity.x = walkSpeed;
         drag.x = deceleration;
         acceleration.x = -320;
     }

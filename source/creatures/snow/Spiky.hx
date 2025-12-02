@@ -35,7 +35,10 @@ class Spiky extends Enemy
         var groundDetectorX = if (direction == 1) { x + this.width + 1; } else { x - 1; } // what is this
         var groundDetectorY = y + this.height + offset.y + 1;
 
-        point.setPosition(groundDetectorX, groundDetectorY);
+        if (currentState == Alive)
+        {
+            point.setPosition(groundDetectorX, groundDetectorY);
+        }
 
         // Things
         var hasGround = false;
@@ -66,5 +69,12 @@ class Spiky extends Enemy
         {
             killFall();
         }
+    }
+
+    override public function killFall()
+    {
+        dieFall = true;
+        point.kill();
+        kill();
     }
 }
